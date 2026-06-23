@@ -8,18 +8,18 @@ int main()
     printf("%d",y);
     return 0;
 }
-int disp_2digit_odd_sum_tens7(int a)
+int disp_2digit_odd_sum_tens7(int x)
 {
-    int y,i,tens,odd;
-    y=0;
+    int sum,i,tens,odd;
+    sum=0;
     for(i=10;i<=99;i++)
     {
         tens=i/10;
-        odd=i%2!=0;
-        if(tens==7 && odd)
+        odd=i%2;
+        if(tens==7 && odd==1)
         {
-           y=y+i; 
+           sum=sum+i; 
         }
     }
-    return y;
+    return sum;
 }
