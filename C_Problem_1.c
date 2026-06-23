@@ -3,18 +3,18 @@ int disp_sum(int);
 int main()
 {
     int x,y;
-    scanf("%d",&x);
+    x=0;
     y=disp_sum(x);
     printf("%d",y);
     return 0;
 }
-int disp_sum(int a)
+int disp_sum(int x)
 {
-    int y,i;
-    y=0;
-    for(i=1;i<=5;i++)
+    int sum,i;
+    sum=0;
+    for(i=0;i<=5;i++)
     {
-        y=y+i;
+        sum=sum+i;
     }
-    return y;
+    return sum;
 }
