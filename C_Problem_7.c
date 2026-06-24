@@ -9,15 +9,15 @@ int main()
     printf("%d",y);
     return 0;
 }
-int disp_reverse_number(int a)
+int disp_reverse_number(int x)
 {
     int rev,rem;
     rev=0;
-    while(a>0)
+    while(x>0)
     {
-        rem=a%10;
+        rem=x%10;
         rev=(rev*10)+rem;
-        a=a/10;
+        x=x/10;
     }
     return rev;
 }
