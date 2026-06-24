@@ -9,14 +9,14 @@ int main()
     printf("%d",y);
     return 0;
 }
-int count_total_digits(int a)
+int count_total_digits(int x)
 {
     int count;
     count=0;
-    while(a>0)
+    while(x>0)
     {
         count=count+1;
-        a=a/10;
+        x=x/10;
     }
     return count;
 }
